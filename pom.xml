@@ -104,10 +104,14 @@
     <url>https://travis-ci.org/mojohaus/license-maven-plugin</url>
   </ciManagement>
   <distributionManagement>
-    <site>
-      <id>github</id>
-      <url>scm:git:git@github.com:mojohaus/license-maven-plugin.git</url>
-    </site>
+    <snapshotRepository>
+      <id>alfresco-releases-travis</id>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>alfresco-releases-travis</id>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/releases</url>
+    </repository>
   </distributionManagement>
 
   <properties>
